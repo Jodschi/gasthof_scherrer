@@ -15,7 +15,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="gasthofscherrer.php">Startseite</a></li>
+            <li><a href="index.html">Startseite</a></li>
             <li><a href="speisekarte.php">Speisekarte</a></li>
             <li><a href="zimmerbuchung.php">Zimmerbuchung</a></li>
             <li><a href="tischreservierung.php">Tischreservierung</a></li>
