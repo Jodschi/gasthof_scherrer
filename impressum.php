@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ihr Name">
     <title>Impressum</title>
-    <link rel="stylesheet" href="style.css"> <!-- Verknüpfen Sie Ihre CSS-Datei hier -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ratzesberger, Reiter">
     <title>Speisekarte</title>
-    <link rel="stylesheet" href="style.css"> <!-- Verknüpfen Sie Ihre CSS-Datei hier -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
@@ -35,7 +35,7 @@
                 <p>Geröstetes Brot mit Tomaten, Knoblauch, Basilikum und Olivenöl.</p>
                 <p class="price">8,99 €</p>
             </li>
-            <!-- Fügen Sie weitere Vorspeisen hinzu -->
+            <!-- weitere Hauptgerichte müssen noch hinzugefügt werden -->
         </ul>
     </section>
 
@@ -52,7 +52,7 @@
                 <p>Saftiges Rindersteak mit Kartoffeln und Gemüse.</p>
                 <p class="price">18,99 €</p>
             </li>
-            <!-- Fügen Sie weitere Hauptgerichte hinzu -->
+            <!-- weitere Hauptgerichte müssen noch hinzugefügt werden -->
         </ul>
     </section>
 
@@ -69,7 +69,7 @@
                 <p>Warmes Schokoladendessert mit flüssigem Kern und Vanilleeis.</p>
                 <p class="price">9,99 €</p>
             </li>
-            <!-- Fügen Sie weitere Desserts hinzu -->
+            <!-- weitere Hauptgerichte müssen noch hinzugefügt werden -->
         </ul>
     </section>
 

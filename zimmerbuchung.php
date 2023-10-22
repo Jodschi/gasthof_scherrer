@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ratzesberger, Reiter">
     <title>Zimmerbuchung</title>
-    <link rel="stylesheet" href="style.css"> <!-- Verknüpfen Sie Ihre CSS-Datei hier -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                 <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
             </div>
             <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">Identität bestätigen</button>
+                <button type="submit">Identität bestätigen</button>
             </div>
             <div><label for="check-in">Check-In Datum:</label>
                 <input type="date" id="check-in" name="check-in" required>

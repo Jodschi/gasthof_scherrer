@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ihr Name">
+    <meta name="author" content="Ratzesberger, Reiter">
     <title>Kontakt</title>
-    <link rel="stylesheet" href="style.css"> <!-- Verknüpfen Sie Ihre CSS-Datei hier -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -47,7 +47,7 @@
     </section>
 
     <footer>
-        &copy; Ihr Unternehmen GmbH
+        &copy; Gasthof Scherrer
     </footer>
 </body>
 </html>
