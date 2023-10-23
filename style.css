@@ -126,6 +126,8 @@ header, footer {
     padding: 20px;
 }
 
+
+/* Sticky Header */
 .sticky{
     position: fixed;
     top: 0;
