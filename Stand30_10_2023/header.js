@@ -1,13 +1,14 @@
-window.onscroll = function()  {stickyHeader()};
+window.onscroll = function() {stickyHeader()};
 
-let header = document.getElementById("sticky_header");
+const navbar = document.querySelector('.sticky-header');
+const header = document.querySelector('header');
 
-let sticky = header.offsetTop;
+let sticky = header.clientHeight;
 
 function stickyHeader() {
     if (window.scrollY > sticky)  {
-        header.classList.add("sticky");
+        navbar.classList.add("sticky");
     } else {
-        header.classList.remove("sticky");
+        navbar.classList.remove("sticky");
     }
 }
