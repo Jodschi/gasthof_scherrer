@@ -1,15 +1,23 @@
-/* style.css */
+/* fonts */
+@font-face {
+    font-family: 'NotoSans';
+    src: url('NotoSans/NotoSans-Medium.ttf');
+}
 
 /* Globale Stile */
 body {
-    font-family: Arial, sans-serif;
+    font-family: NotoSans;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
 }
 
+h1 {
+    font-size: 4em;
+}
+
 header {
-    background-color: #ff6600;
+    background-color: #0059ff;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -17,6 +25,10 @@ header {
 
 nav {
     background-color: #333;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
@@ -42,8 +54,14 @@ section {
     border-radius: 5px;
 }
 
+.google_maps{
+    width:600;
+    height:450;
+    border:0;
+}
+
 h2 {
-    color: #ff6600;
+    color: #0059ff;
 }
 
 /* Footer-Stil */
@@ -53,8 +71,6 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
-
 /* Zimmerbuchungsformular */
 form {
     background-color: #f5f5f5;
@@ -84,16 +100,16 @@ textarea {
 }
 
 select {
-    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
     background: transparent url('arrow.png') no-repeat right center;
     background-size: 20px;
     padding-right: 30px;
 }
 
 input[type="submit"] {
-    background-color: #ff6600;
+    background-color: #0059ff;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -104,8 +120,16 @@ input[type="submit"] {
 
 /* Stil für Header und Footer */
 header, footer {
-    background-color: #ff6600;
+    background-color: #0059ff;
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+
+/* Sticky Header */
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

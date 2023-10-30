@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,10 @@
     <meta name="author" content="Ihr Name">
     <title>Datenschutz</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <header>
+    <header id="sticky_header">
         <h1>Datenschutz</h1>
     </header>
     <nav>
@@ -45,5 +47,7 @@
     <footer>
         &copy; Gasthof Scherrer
     </footer>
+
+    <script src="header.js"></script>
 </body>
 </html>

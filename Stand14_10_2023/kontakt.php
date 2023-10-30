@@ -6,9 +6,10 @@
     <meta name="author" content="Ratzesberger, Reiter">
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
+    <header id="sticky_header">
         <h1>Kontakt</h1>
     </header>
     <nav>
@@ -49,5 +50,7 @@
     <footer>
         &copy; Gasthof Scherrer
     </footer>
+
+    <script src="header.js"></script>
 </body>
 </html>

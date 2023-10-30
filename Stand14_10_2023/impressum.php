@@ -6,9 +6,10 @@
     <meta name="author" content="Ihr Name">
     <title>Impressum</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
+    <header id="sticky_header">
         <h1>Impressum</h1>
     </header>
     <nav>
@@ -57,5 +58,7 @@
     <footer>
         &copy; Gasthof Scherrer
     </footer>
+
+    <script src="header.js"></script>
 </body>
 </html>

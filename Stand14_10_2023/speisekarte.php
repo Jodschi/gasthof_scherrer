@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ratzesberger, Reiter">
     <title>Speisekarte</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
+    <header id="sticky_header">
         <h1>Unsere Speisekarte</h1>
     </header>
     <nav>
@@ -35,7 +36,7 @@
                 <p>Geröstetes Brot mit Tomaten, Knoblauch, Basilikum und Olivenöl.</p>
                 <p class="price">8,99 €</p>
             </li>
-            <!-- weitere Hauptgerichte müssen noch hinzugefügt werden -->
+          
         </ul>
     </section>
 
@@ -52,7 +53,7 @@
                 <p>Saftiges Rindersteak mit Kartoffeln und Gemüse.</p>
                 <p class="price">18,99 €</p>
             </li>
-            <!-- weitere Hauptgerichte müssen noch hinzugefügt werden -->
+           
         </ul>
     </section>
 
@@ -69,12 +70,20 @@
                 <p>Warmes Schokoladendessert mit flüssigem Kern und Vanilleeis.</p>
                 <p class="price">9,99 €</p>
             </li>
-            <!-- weitere Hauptgerichte müssen noch hinzugefügt werden -->
+            
         </ul>
+    </section>
+
+    <section>
+        <h2>Buffet</h2>
+        <p>Wir begrüßen Sie auch sehr gerne mit einem vorbestellbarem Buffet nach Wunsch.</p>
+        <p>Unsere Köche geben Ihr Bestes um Ihnen ein auf Wunsch regionales Buffet mit Wurst, Käse, hausgemachte Soßen, hausgemachte Brote, verschiedenste Gemüsesorten und vieles mehr anzurichten!</p>
     </section>
 
     <footer>
         &copy; Gasthof Scherrer
     </footer>
+
+    <script src="header.js"></script>
 </body>
 </html>
