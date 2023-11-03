@@ -16,12 +16,15 @@ h1 {
     font-size: 4em;
 }
 
+
 nav {
     background-color: #333;
     height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0%;
+    z-index: 100;
 }
 
 nav ul {
@@ -79,6 +82,7 @@ footer {
 header {
     padding: 20px;
     height: 8em;
+    margin-bottom: 0%;
 }
 
 
@@ -140,6 +144,9 @@ header, footer {
     padding: 20px;
 }
 
+.header-wrapper{
+    
+}
 
 /* Sticky Header */
 .sticky{
@@ -148,4 +155,10 @@ header, footer {
     left: 0;
     z-index: 100;
     width: 100%;
+    height: 5%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    background-color: #8791a2;
+    opacity: 100%;
+    transition: 0.6s ease-in ;
 }

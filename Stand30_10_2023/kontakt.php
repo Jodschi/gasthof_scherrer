@@ -9,10 +9,10 @@
     
 </head>
 <body>
-    <header id="sticky_header">
+    <header>
         <h1>Kontakt</h1>
     </header>
-    <nav>
+    <nav class="sticky_header">
         <ul>
             <li><a href="index.html">Startseite</a></li>
             <li><a href="speisekarte.php">Speisekarte</a></li>
