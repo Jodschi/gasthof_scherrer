@@ -5,6 +5,10 @@
 }
 
 /* Globale Stile */
+html{
+    font-size: 100%;
+}
+
 body {
     font-family: NotoSans;
     margin: 0;
@@ -14,6 +18,7 @@ body {
 
 h1 {
     font-size: 4em;
+    font-size: 3rem;
 }
 
 nav {
@@ -45,6 +50,7 @@ nav ul li a {
     color: #fff;
     font-size: 1.4em;
     transition: text-decoration 1s linear;
+    transition: 0.6s ease-in-out;
 }
 
 nav ul li a:hover{
@@ -54,8 +60,11 @@ nav ul li a:hover{
 section {
     margin: 20px;
     padding: 20px;
+    margin: 2em;
+    padding: 3em;
     background-color: #fff;
     border-radius: 5px;
+    border-radius: 0.4em;
 }
 
 .google_maps{
@@ -74,11 +83,19 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+    padding: 2em;
 }
 
 header {
+<<<<<<< Updated upstream
     padding: 20px;
     height: 8em;
+=======
+    padding-top: 4em;
+    padding-bottom: 4em;
+    height: 2em;
+    margin-bottom: 0%;
+>>>>>>> Stashed changes
 }
 
 
@@ -137,15 +154,41 @@ header, footer {
     justify-content: center;
     text-align: center;
     align-items: center;
+<<<<<<< Updated upstream
     padding: 20px;
 }
 
+=======
+}
+>>>>>>> Stashed changes
 
 /* Sticky Header */
 .sticky{
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 100%;
     z-index: 100;
     width: 100%;
+<<<<<<< Updated upstream
+=======
+    height: 6%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    background-color: #8791a2;
+    opacity: 100%;
+    transition: 0.6s ease-in ;
+}
+
+.navbar-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.content{
+    margin-top: 7rem;
+>>>>>>> Stashed changes
 }
