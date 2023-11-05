@@ -13,7 +13,11 @@ body {
 }
 
 h1 {
+<<<<<<< Updated upstream
     font-size: 4em;
+=======
+    font-size: 3rem;
+>>>>>>> Stashed changes
 }
 
 nav {
@@ -44,7 +48,11 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1.4em;
+<<<<<<< Updated upstream
     transition: text-decoration 1s linear;
+=======
+    transition: 0.6s ease-in-out;
+>>>>>>> Stashed changes
 }
 
 nav ul li a:hover{
@@ -52,10 +60,17 @@ nav ul li a:hover{
 }
 
 section {
+<<<<<<< Updated upstream
     margin: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
+=======
+    margin: 2em;
+    padding: 3em;
+    background-color: #fff;
+    border-radius: 0.4em;
+>>>>>>> Stashed changes
 }
 
 .google_maps{
@@ -73,7 +88,11 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
+<<<<<<< Updated upstream
     padding: 10px;
+=======
+    padding: 2em;
+>>>>>>> Stashed changes
 }
 
 header {
