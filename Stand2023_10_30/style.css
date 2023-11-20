@@ -17,6 +17,7 @@ body {
 }
 
 h1 {
+    font-size: 4em;
     font-size: 3rem;
 }
 
@@ -49,6 +50,7 @@ nav ul li a {
     color: #fff;
     font-size: 1.4em;
     transition: text-decoration 1s linear;
+    transition: 0.6s ease-in-out;
 }
 
 nav ul li a:hover{
@@ -56,10 +58,13 @@ nav ul li a:hover{
 }
 
 section {
-    margin: 2rem;
-    padding: 2rem;
+    margin: 20px;
+    padding: 20px;
+    margin: 2em;
+    padding: 3em;
     background-color: #fff;
-    border-radius: 0.3em;
+    border-radius: 5px;
+    border-radius: 0.4em;
 }
 
 .google_maps{
@@ -77,14 +82,20 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
+    padding: 10px;
     padding: 2em;
 }
 
 header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    height: 8rem;
+<<<<<<< Updated upstream
+    padding: 20px;
+    height: 8em;
+=======
+    padding-top: 4em;
+    padding-bottom: 4em;
+    height: 2em;
     margin-bottom: 0%;
+>>>>>>> Stashed changes
 }
 
 
@@ -143,17 +154,25 @@ header, footer {
     justify-content: center;
     text-align: center;
     align-items: center;
+<<<<<<< Updated upstream
+    padding: 20px;
 }
 
+=======
+}
+>>>>>>> Stashed changes
 
 /* Sticky Header */
 .sticky{
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 100%;
     z-index: 100;
     width: 100%;
-    height: 5%;
+<<<<<<< Updated upstream
+=======
+    height: 6%;
     margin-top: 0%;
     margin-bottom: 10%;
     background-color: #8791a2;
@@ -167,6 +186,9 @@ header, footer {
     height: 100%;
 }
 
+
+
 .content{
-    margin-top: 6rem;
+    margin-top: 7rem;
+>>>>>>> Stashed changes
 }
