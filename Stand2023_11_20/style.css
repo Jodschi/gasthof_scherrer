@@ -4,6 +4,10 @@
     src: url('NotoSans/NotoSans-Medium.ttf');
 }
 
+html, body{
+    
+}
+
 /* Globale Stile */
 html{
     font-size: 100%;
@@ -86,9 +90,7 @@ footer {
 }
 
 header {
-    padding-top: 4em;
-    padding-bottom: 4em;
-    height: 2em;
+    height: 26svh;
     margin-bottom: 0%;
 }
 
@@ -151,29 +153,58 @@ header, footer {
 }
 
 /* Sticky Header */
-.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 100%;
-    z-index: 100;
-    width: 100%;
-    height: 6%;
-    margin-top: 0%;
-    margin-bottom: 10%;
-    background-color: #8791a2;
-    opacity: 100%;
-    transition: 0.6s ease-in ;
-}
+
+    .sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 100%;
+        z-index: 100;
+        width: 100%;
+        margin-top: 0%;
+        margin-bottom: 10%;
+        /* background-color: #8791a2; */
+        opacity: 100%;
+        transition: 6s ease-in ;
+    }
 
 .navbar-wrapper{
     position: absolute;
     width: 100%;
     height: 100%;
+    
 }
 
-
+.sticky-header{
+    transition: 0.6s ease-in;
+}
 
 .content{
     margin-top: 7rem;
+}
+
+/* Funktioniert noch nicht */
+@media only screen and (max-width: 600px){ /*nur für Geräte mit einer Breite unter 600px*/
+    .sticky-header{
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+    }
+}
+
+.home_button{
+    width: 4em;
+    height: 4em;
+    margin-left: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stripe{
+    width: 100%;
+    margin: 0.2em;
+    background-color: white;
+    border-radius: 5%;
+
 }
