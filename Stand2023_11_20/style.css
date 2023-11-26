@@ -20,12 +20,12 @@ body {
 
 h1 {
     font-size: 4em;
-    font-size: 3rem;
+
 }
 
 nav {
     background-color: #333;
-    height: 4em;
+    height: 3.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,17 +81,23 @@ h2 {
 
 /* Footer-Stil */
 footer {
-    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 2em;
+    padding: 1.4em;
 }
 
 header {
     height: 26svh;
     margin-bottom: 0%;
+    background-image: url("img/Pfarrkirchen_Header_schmal_Stantejsky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
+header h1{
+    color: black;
+}
 
 /* Zimmerbuchungsformular */
 form {
@@ -190,35 +196,49 @@ header, footer {
     }
 }
 
+/* Hamburger Button */
 .hamburger_button{
-    width: 4em;
-    height: 4em;
-    margin-left: 2em;
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
+/* einzelne Striche im Hamburger Button */
 .stripe{
-    width: 100%;
-    height: 20%;
-    margin: 0;
+    width: 2.5em;
+    height: 0.4em;
     background-color: white;
     border-radius: 2%;
 }
 
-.footer-links li{
-    list-style: none;
-    display: inline;
-}
-
-.footer-links a{
+/* Die Links im Footer sollen nicht wie Standard-Links aussehen */
+.footer-link a, .footer-link_last a{
     text-decoration: none;
     color: white;
 }
 
-.footer-links{
+/* mit ::after lässt sich ein "Pseudoelement" direkt nach dem eigentlichen HTML-Element
+   erzeugen --> in diesem Fall ein Bindestrich */
+.footer-link::after{
+    content: "-";
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* display: inline macht, dass die Links nebeneinander angezeigt werden */
+.footer-link, .footer-link_last{
     display: inline;
+}
+
+/* der Trennstrich zwischen dem Copyright-Siegel im Footer und den Links */
+.vertical_stripe{
+    width: 0.1em;
+    height: 2em;
     margin-left: 2em;
+    margin-right: 2em;
+    background-color: white;
 }
