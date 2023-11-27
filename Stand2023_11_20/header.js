@@ -9,7 +9,10 @@ let sticky = header.clientHeight;
 function stickyHeader() {
     if (window.scrollY > (sticky))  {
         navbar.classList.add("sticky");
+        sidebar.classList.add("sidebar_sticky");
     } else {
         navbar.classList.remove("sticky");
+        sidebar.classList.remove("sidebar_sticky");
     }
 }
+
