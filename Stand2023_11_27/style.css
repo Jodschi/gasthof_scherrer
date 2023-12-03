@@ -188,33 +188,30 @@ nav ul li a:hover{
     margin-top: 7rem;
 }
 
-/* Funktioniert noch nicht */
-@media only screen and (max-width: 600px){ /*nur für Geräte mit einer Breite unter 600px*/
-    .sticky-header{
-        position: sticky;
-        top: 0;
-        z-index: 9999;
-    }
-}
 
 /* Hamburger Button */
-.hamburger_button{
-    width: 2.5em;
-    height: 2.5em;
-    margin-left: 2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* einzelne Striche im Hamburger Button */
-.stripe{
+/* wird nur für Handy-displays angezeigt */
+@media only screen and (max-width: 600px){
+    .hamburger_button{
+        width: 2.5em;
+        height: 2.5em;
+        margin-left: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;   
+    }
+    
+    /* einzelne Striche im Hamburger Button */
+    .stripe{
     width: 2.5em;
     height: 0.4em;
     background-color: white;
     border-radius: 2%;
+    }
 }
+
+
 
 /* Die Links im Footer sollen nicht wie Standard-Links aussehen */
 .footer-link a, .footer-link_last a{
@@ -262,7 +259,8 @@ nav ul li a:hover{
 }
 
 .sidebar_sticky{
-    position: sticky;
+    position: fixed;
+    top: 0;
 }
 
 .sidebar-links{

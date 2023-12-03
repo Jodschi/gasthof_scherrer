@@ -7,7 +7,7 @@ const header = document.querySelector('header');
 let sticky = header.clientHeight;
 
 function stickyHeader() {
-    if (window.scrollY > (sticky))  {
+    if (window.scrollY > sticky)  {
         navbar.classList.add("sticky");
         sidebar.classList.add("sidebar_sticky");
     } else {

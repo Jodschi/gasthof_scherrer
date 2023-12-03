@@ -9,7 +9,7 @@ console.log(navbar.clientHeight);
 // onlick Eventhandler
 window.addEventListener('load', (e) =>{
     hamburger_icon.addEventListener('click', () => {
-        sidebar_wrapper.classList.toggle("hidden");
+        sidebar.classList.toggle("hidden");
         console.log("Click");
     });
 });
