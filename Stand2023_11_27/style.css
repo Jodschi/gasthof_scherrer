@@ -19,8 +19,7 @@ body {
 }
 
 h1 {
-    font-size: 4em;
-
+    font-size: 3em;
 }
 
 
@@ -30,8 +29,8 @@ section {
     margin: 2em;
     padding: 3em;
     background-color: #fff;
-    border-radius: 5px;
-    border-radius: 0.4em;
+    border-radius: 1em;
+    box-shadow: 0em 1em 0em rgb(213, 213, 213);
 }
 
 .google_maps{
@@ -52,12 +51,16 @@ footer {
 }
 
 header {
-    height: 26svh;
+    height: 40svh;
     margin-bottom: 0%;
     background-image: url("img/Pfarrkirchen_Header_schmal_Stantejsky.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
 }
 
 header h1{
@@ -117,7 +120,10 @@ header, footer {
     color: #fff;
     display: flex;
     justify-content: center;
-    text-align: center;
+}
+
+footer{
+    display: flex;
     align-items: center;
 }
 
@@ -191,7 +197,7 @@ nav ul li a:hover{
 
 /* Hamburger Button */
 /* wird nur für Handy-displays angezeigt */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
     .hamburger_button{
         width: 2.5em;
         height: 2.5em;
@@ -209,9 +215,18 @@ nav ul li a:hover{
     background-color: white;
     border-radius: 2%;
     }
+
+    #navbar-links{
+        visibility: hidden;
+
+    }
 }
 
-
+#navbar-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 /* Die Links im Footer sollen nicht wie Standard-Links aussehen */
 .footer-link a, .footer-link_last a{
@@ -278,4 +293,11 @@ nav ul li a:hover{
 
 .hidden{
     opacity: 0%;
+}
+
+.slide-in-element{
+    position: fixed;
+    top: 0;
+    left: -60em;
+    transition: left 0.5s ease;
 }
