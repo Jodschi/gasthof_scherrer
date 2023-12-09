@@ -9,6 +9,7 @@
 /* Globale Stile */
 html{
     font-size: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -24,10 +25,10 @@ h1 {
 
 
 section {
-    margin: 20px;
-    padding: 20px;
     margin: 2em;
     padding: 3em;
+    height: 10em;
+    width: 80vw;
     background-color: #fff;
     border-radius: 1em;
     box-shadow: 0em 1em 0em rgb(213, 213, 213);
@@ -292,12 +293,15 @@ nav ul li a:hover{
 }
 
 .hidden{
-    opacity: 0%;
+    visibility: hidden;
 }
 
 .slide-in-element{
-    position: fixed;
-    top: 0;
-    left: -60em;
-    transition: left 0.5s ease;
+    transition: margin-left 1s ease;
+    transition-delay: 0s;
 }
+
+.far_left{
+    margin-left: 100vw;
+}
+
