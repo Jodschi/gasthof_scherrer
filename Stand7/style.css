@@ -23,7 +23,6 @@ h1 {
     font-size: 3em;
 }
 
-
 section {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -41,36 +40,12 @@ section {
 /* die Maps Karte entsprechend an die Höhe und Breite des Screens angepasst */
 .google_maps{
     width: 80vw;
-    height: 55vw;
+    height: 40vw;
     border: none;
 }
 
 h2 {
     color: #0059ff;
-}
-
-/* Footer-Stil */
-footer {
-    color: #fff;
-    text-align: center;
-    padding: 1.4em;
-}
-
-header {
-    height: 80svh;
-    margin-bottom: 0%;
-    background-image: url("img/Pfarrkirchen_Panoramablick.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    justify-items: center;
-}
-
-header h1{
-    color: black;
 }
 
 /* Zimmerbuchungsformular */
@@ -120,147 +95,11 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* Stil für Header und Footer */
-header, footer {
-    background-color: #0059ff;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-}
-
-footer{
-    display: flex;
-    align-items: center;
-}
-
-nav {
-    background-color: #333;
-    height: 3.5em;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 4%;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.4em;
-    transition: text-decoration 1s linear;
-    transition: 0.6s ease-in-out;
-}
-
-nav ul li a:hover{
-    text-decoration: underline;
-}
-
-/* Sticky Header */
-
-.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 100%;
-    z-index: 100;
-    width: 100%;
-    margin-top: 0%;
-    margin-bottom: 10%;
-    /* background-color: #8791a2; */
-    opacity: 100%;
-    transition: 6s ease-in ;
-}
-
-.navbar-wrapper{
-    position: absolute;
-    width: 100%;
-}
-
-
-.sticky-header{
-    transition: 0.6s ease-in;
-
-}
 
 .content{
     margin-top: 7rem;
 }
 
-
-/* Hamburger Button */
-/* wird nur für Handy-displays angezeigt */
-@media only screen and (max-width: 1000px){
-    .hamburger_button{
-        width: 2.5em;
-        height: 2.5em;
-        margin-left: 2vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;   
-    }
-    
-    /* einzelne Striche im Hamburger Button */
-    .stripe{
-    width: 2.5em;
-    height: 0.4em;
-    background-color: white;
-    border-radius: 2%;
-    }
-
-    #navbar-links{
-        visibility: hidden;
-
-    }
-}
-
-#navbar-links{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/* Die Links im Footer sollen nicht wie Standard-Links aussehen */
-.footer-link a, .footer-link_last a{
-    text-decoration: none;
-    color: white;
-}
-
-/* mit ::after lässt sich ein "Pseudoelement" direkt nach dem eigentlichen HTML-Element
-   erzeugen --> in diesem Fall ein Bindestrich */
-.footer-link::after{
-    content: "-";
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-/* display: inline macht, dass die Links nebeneinander angezeigt werden */
-.footer-link, .footer-link_last{
-    display: inline;
-}
-
-/* der Trennstrich zwischen dem Copyright-Siegel im Footer und den Links */
-.vertical_stripe{
-    width: 0.1em;
-    height: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
-    background-color: white;
-}
 
 #sidebar{
     height: 100vh;
@@ -309,3 +148,4 @@ nav ul li a:hover{
 .far_left{
     margin-left: 100vw;
 }
+

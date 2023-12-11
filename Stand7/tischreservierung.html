@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ratzesberger, Reiter">
     <title>Tischreservierung</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tischreservierung.css">
     
 </head>
+
+
 <body>
     <header id="sticky_header">
         <h1>Tischreservierung</h1>
@@ -23,7 +27,8 @@
             <li><a href="impressum.php">Impressum</a></li>
         </ul>
     </nav>
-    <form action="reservierung.php" method="post">
+
+    <form action="reservierung.php" method="post" class="reservation-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         
@@ -46,10 +51,11 @@
         <textarea id="special-requests" name="special-requests"></textarea>
         
         <label for="newsletter">Newsletter abonnieren:
-        <input type="checkbox" id="newsletter" name="newsletter"></label>
-        <br>
+          <input type="checkbox" id="newsletter" name="newsletter">
+        </label>
+        
         <input type="submit" value="Reservierung abschicken">
-    </form>
+      </form>
 
     <footer>
         &copy; Gasthof Scherrer
