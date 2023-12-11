@@ -1,4 +1,5 @@
-window.onscroll = function() {stickyHeader()};
+window.onscroll = stickyHeader;
+window.onload = stickyHeader;
 
 const navbar = document.querySelector('.sticky-header');
 const header = document.querySelector('header');

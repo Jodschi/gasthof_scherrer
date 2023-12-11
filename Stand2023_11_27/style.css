@@ -25,19 +25,24 @@ h1 {
 
 
 section {
-    margin: 2em;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3em;
+    margin-bottom: 3em;
     padding: 3em;
-    height: 10em;
-    width: 80vw;
+    min-height: 10em;
+    height: fit-content;
+    width: 80%;
     background-color: #fff;
     border-radius: 1em;
     box-shadow: 0em 1em 0em rgb(213, 213, 213);
 }
 
+/* die Maps Karte entsprechend an die Höhe und Breite des Screens angepasst */
 .google_maps{
-    width:600;
-    height:450;
-    border:0;
+    width: 80vw;
+    height: 55vw;
+    border: none;
 }
 
 h2 {
@@ -52,9 +57,9 @@ footer {
 }
 
 header {
-    height: 40svh;
+    height: 80svh;
     margin-bottom: 0%;
-    background-image: url("img/Pfarrkirchen_Header_schmal_Stantejsky.jpg");
+    background-image: url("img/Pfarrkirchen_Panoramablick.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -304,4 +309,3 @@ nav ul li a:hover{
 .far_left{
     margin-left: 100vw;
 }
-
