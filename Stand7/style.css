@@ -1,0 +1,311 @@
+/* fonts */
+@font-face {
+    font-family: 'NotoSans';
+    src: url('NotoSans/NotoSans-Medium.ttf');
+}
+
+
+
+/* Globale Stile */
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: NotoSans;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
+section {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 3em;
+    min-height: 10em;
+    height: fit-content;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: 0em 1em 0em rgb(213, 213, 213);
+}
+
+/* die Maps Karte entsprechend an die Höhe und Breite des Screens angepasst */
+.google_maps{
+    width: 80vw;
+    height: 55vw;
+    border: none;
+}
+
+h2 {
+    color: #0059ff;
+}
+
+/* Footer-Stil */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1.4em;
+}
+
+header {
+    height: 80svh;
+    margin-bottom: 0%;
+    background-image: url("img/Pfarrkirchen_Panoramablick.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+}
+
+header h1{
+    color: black;
+}
+
+/* Zimmerbuchungsformular */
+form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url('arrow.png') no-repeat right center;
+    background-size: 20px;
+    padding-right: 30px;
+}
+
+input[type="submit"] {
+    background-color: #0059ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Stil für Header und Footer */
+header, footer {
+    background-color: #0059ff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: #333;
+    height: 3.5em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 4%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4em;
+    transition: text-decoration 1s linear;
+    transition: 0.6s ease-in-out;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Sticky Header */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 100%;
+    z-index: 100;
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    /* background-color: #8791a2; */
+    opacity: 100%;
+    transition: 6s ease-in ;
+}
+
+.navbar-wrapper{
+    position: absolute;
+    width: 100%;
+}
+
+
+.sticky-header{
+    transition: 0.6s ease-in;
+
+}
+
+.content{
+    margin-top: 7rem;
+}
+
+
+/* Hamburger Button */
+/* wird nur für Handy-displays angezeigt */
+@media only screen and (max-width: 1000px){
+    .hamburger_button{
+        width: 2.5em;
+        height: 2.5em;
+        margin-left: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;   
+    }
+    
+    /* einzelne Striche im Hamburger Button */
+    .stripe{
+    width: 2.5em;
+    height: 0.4em;
+    background-color: white;
+    border-radius: 2%;
+    }
+
+    #navbar-links{
+        visibility: hidden;
+
+    }
+}
+
+#navbar-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Die Links im Footer sollen nicht wie Standard-Links aussehen */
+.footer-link a, .footer-link_last a{
+    text-decoration: none;
+    color: white;
+}
+
+/* mit ::after lässt sich ein "Pseudoelement" direkt nach dem eigentlichen HTML-Element
+   erzeugen --> in diesem Fall ein Bindestrich */
+.footer-link::after{
+    content: "-";
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* display: inline macht, dass die Links nebeneinander angezeigt werden */
+.footer-link, .footer-link_last{
+    display: inline;
+}
+
+/* der Trennstrich zwischen dem Copyright-Siegel im Footer und den Links */
+.vertical_stripe{
+    width: 0.1em;
+    height: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: white;
+}
+
+#sidebar{
+    height: 100vh;
+    width: 30vw;
+    background-color: black;
+    margin-top: 0;
+}
+
+.sidebar-wrapper{
+    position: absolute;
+}
+
+
+.site_body{
+    display: flex;
+
+}
+
+.sidebar_sticky{
+    position: fixed;
+    top: 0;
+}
+
+.sidebar-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5em;
+}
+
+.sidebar-links li{
+    display: flex;
+    justify-content: center;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.slide-in-element{
+    transition: margin-left 1s ease;
+    transition-delay: 0s;
+}
+
+.far_left{
+    margin-left: 100vw;
+}
