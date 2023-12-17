@@ -109,15 +109,18 @@ nav ul li a:focus {
 
 .sticky-header{
     background-image:   linear-gradient(var(--sticky-header-color), var(--sticky-header-color)),
-                        linear-gradient(to right, rgb(64, 0, 255), rgb(0, 195, 255),rgb(0, 255, 30));
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
+                        linear-gradient(to right, rgb(46, 0, 185), rgb(0, 133, 174),rgb(0, 174, 96)),
+                        linear-gradient(to right, var(--sticky-header-color), var(--sticky-header-color)),
+                        linear-gradient(to right, rgb(82, 82, 102), var(--sticky-header-color));
+                        
+    background-size: 100% 4px, 0 4px, 100% 100%, 0 100%;
+    background-position: 100% 100%, 0 100%, 100% 100%, 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 0.4s ease-in-out;
+    transition: background-size 0.6s ease-in-out;
 }
 
 .bottom_line{
-    background-size: 0 3px, 100% 3px;
+    background-size: 0 3px, 100% 3px, 0 100%, 100% 100%;
 }
 
 
