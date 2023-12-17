@@ -1,5 +1,6 @@
 :root {
     --header-underline-color: rgb(27, 27, 97);
+    --sticky-header-color: rgb(57, 57, 57);
 }
 
 header {
@@ -38,7 +39,7 @@ header, footer {
 
 
 nav {
-    background-color: #333;
+    background-color: var(--sticky-header-color);
     height: 3.5em;
     display: flex;
     justify-content: left;
@@ -69,7 +70,7 @@ nav ul li a {
     font-size: 1.4em;
 
     background: 
-      linear-gradient(to right, var(--header-underline-color), var(--header-underline-color)),
+      linear-gradient(to right, var(--sticky-header-color), var(--sticky-header-color)),
       linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
     background-size: 100% 0.1em, 0 0.1em;
     background-position: 100% 100%, 0 100%;
@@ -107,13 +108,18 @@ nav ul li a:focus {
 
 
 .sticky-header{
-    transition: border-bottom 0.3s;
+    background-image:   linear-gradient(var(--sticky-header-color), var(--sticky-header-color)),
+                        linear-gradient(to right, rgb(64, 0, 255), rgb(0, 195, 255),rgb(0, 255, 30));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
 }
 
-.border{
-    border-bottom: 0.4em solid rgb(62, 70, 112);
-    box-sizing: border-box;
+.bottom_line{
+    background-size: 0 3px, 100% 3px;
 }
+
 
 /* Hamburger Button */
 /* wird nur für Handy-displays angezeigt */
