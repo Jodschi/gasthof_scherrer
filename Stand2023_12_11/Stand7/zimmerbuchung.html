@@ -7,6 +7,8 @@
     <meta name="author" content="Ratzesberger, Reiter">
     <title>Zimmerbuchung</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="formular.css">
     
 </head>
 
@@ -17,55 +19,59 @@
     <nav>
         <ul>
             <li><a href="index.html">Startseite</a></li>
-            <li><a href="speisekarte.php">Speisekarte</a></li>
-            <li><a href="zimmerbuchung.php">Zimmerbuchung</a></li>
-            <li><a href="tischreservierung.php">Tischreservierung</a></li>
-            <li><a href="kontakt.php">Kontakt</a></li>
-            <li><a href="datenschutz.php">Datenschutz</a></li>
-            <li><a href="impressum.php">Impressum</a></li>
+            <li><a href="speisekarte.html">Speisekarte</a></li>
+            <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
+            <li><a href="tischreservierung.html">Tischreservierung</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
         </ul>
     </nav>
-    <form action="zimmerbuchung.php" method="post">
+
+    <form name="zimmerbuchung" action="zimmerbuchung-aw.php" method="post" class="reservation-form"> 
         <br>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required> 
         <br>
-        <form class="row g-3">
-            <div class="col-auto">
-                <label for="staticEmail2" class="visually-hidden">Email</label>
-                <input type="text" class="form-control-plaintext" id="staticEmail2" placeholder="email@example.com">
-            </div>
-            <div class="col-auto">
-                <label for="inputPassword2" class="visually-hidden">Passwort</label>
-                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-            </div>
-            <div class="col-auto">
-                <button type="submit">Identität bestätigen</button>
-            </div>
-            <div><label for="check-in">Check-In Datum:</label>
-                <input type="date" id="check-in" name="check-in" required>
-            </div>
-            <div><label for="check-out">Check-Out Datum:</label>
-                <input type="date" id="check-out" name="check-out" required>
-            </div>
-            <div><label for="room-type">Zimmertyp:</label>
-                <select id="room-type" name="room-type">
-                    <option value="Einzelzimmer">Einzelzimmer</option>
-                    <option value="Doppelzimmer">Doppelzimmer</option>
-                    <option value="Suite">Suite</option>
-                    <br>
-                </select>
-            </div>
-            <div> <label for="special-requests">Besondere Wünsche:</label>
-                <textarea id="special-requests" name="special-requests"></textarea>
-            </div>
-            <div><input type="submit" value="Buchung abschicken"></div>
-        </form>
-        <footer>
-            &copy; Gasthof Scherrer
-        </footer>
+        
+        <div class="col-auto">
+            <label for="staticEmail2" class="visually-hidden">Email</label>
+            <input type="text" class="form-control-plaintext" id="staticEmail2" placeholder="email@example.com">
+        </div>
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Passwort</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+        </div>
+        <div class="col-auto">
+            <button type="submit">Identität bestätigen</button>
+        </div>
+        <div><label for="check-in">Check-In Datum:</label>
+            <input type="date" id="check-in" name="check-in" required>
+        </div>
+        <div><label for="check-out">Check-Out Datum:</label>
+            <input type="date" id="check-out" name="check-out" required>
+        </div>
+        <div><label for="room-type">Zimmertyp:</label>
+            <select id="room-type" name="room-type">
+                <option value="Einzelzimmer">Einzelzimmer</option>
+                <option value="Doppelzimmer">Doppelzimmer</option>
+                <option value="Suite">Suite</option>
+                <br>
+            </select>
+        </div>
+        <div> <label for="special-requests">Besondere Wünsche:</label>
+            <textarea id="special-requests" name="special-requests"></textarea>
+        </div>
+        <div><input type="submit" value="Buchung abschicken"></div>
 
-        <script src="header.js"></script>
+    </form>
+
+    <footer>
+        &copy; Gasthof Scherrer
+    </footer>
+
+    <script src="header.js"></script>      
+ 
 </body>
 
 </html>

@@ -63,7 +63,7 @@ nav ul li {
 }
 
 
-
+/* Underline styles - details of technique here: https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -79,7 +79,7 @@ nav ul li a {
   
 }
 
-/* Underline styles - details of technique here: https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
+
 
 nav ul li a:hover,
 nav ul li a:focus {
@@ -107,6 +107,7 @@ nav ul li a:focus {
 }
 
 
+/* Underline styles - details of technique here: https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
 .sticky-header{
     background-image:   linear-gradient(var(--sticky-header-color), var(--sticky-header-color)),
                         linear-gradient(to right, rgb(46, 0, 185), rgb(0, 133, 174),rgb(0, 174, 96)),
