@@ -1,0 +1,131 @@
+/* Hamburger Button */
+/* wird nur für Handy-displays angezeigt */
+@media only screen and (max-width: 1500px){
+    .hamburger_button{
+        width: 2.5em;
+        height: 2.5em;
+        margin-left: 2.3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* einzelne Striche im Hamburger Button */
+    .stripe{
+        width: 2.5em;
+        height: 0.4em;
+        border-radius: 2%;
+
+        background:
+        linear-gradient(to right, rgba(255,255,255), rgba(255,255,255)),
+        linear-gradient(to right, rgb(189, 250, 255), rgb(154, 225, 255) );
+        background-size: 100% 100%, 0 100%;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 200ms ease-in-out;
+
+    }
+
+    .stripe_onhover{
+        background-size: 0% 100%, 100% 100%;
+    }
+
+    #navbar-links{
+        visibility: hidden;
+    }
+}
+
+.blur{
+    backdrop-filter: blur(5px); /* Hintergrund Blur Effekt */
+}
+
+/* Wrapper für die gesamte sidebar */
+
+.sidebar-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 50vw;
+    min-width: 420px; /* Mindestgröße von 275px, damit die links platz haben */
+    transition: backdrop-filter 0.2s linear 0s;
+}
+
+
+/* Rechteck, das beim Klick auf den Hamburger button erscheint */
+#sidebar{
+    height: 100%;
+    width: 50vw;
+    min-width: 100%; /* Mindestgröße von 275px, damit die links platz haben */ 
+    opacity: 70%;
+    margin-top: 0;
+    
+    transition: background-size 400ms ease-out;
+}
+
+/* nur die transparente Schicht ist sichtbar */
+.sidebar-hidden{
+    background: 
+      linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0)),
+      linear-gradient(to right, var(--sticky-header-color), var(--sticky-header-color));
+    background-size: 100% 100%, 0% 100%;
+    background-position: 100% 100%, 0% 100%;
+    background-repeat: no-repeat;
+}
+
+/* die sichtbare Schicht bekommt 100% width */
+.sidebar-visible{
+    background: 
+      linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0)),
+      linear-gradient(to right, var(--sticky-header-color), var(--sticky-header-color));
+    background-size: 0% 100%, 100% 100%;
+    background-position: 100% 100%, 0% 100%;
+    background-repeat: no-repeat;
+}
+
+.site_body{
+    display: flex;
+}
+
+.sidebar_sticky{
+    position: fixed;
+    top: 0;
+}
+
+.sidebar-links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5em;
+
+}
+
+/* li-Element als Container für die Links */
+.sidebar-links li{
+    display: flex;
+    justify-content: left;
+    margin-top: 5%;
+}
+
+.sidebar-links li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 200%;
+
+    background:
+      linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0)),
+      linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.sidebar-links li a:hover,
+.sidebar-links li a:focus{
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+.hidden{
+    display: none;
+}

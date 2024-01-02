@@ -19,6 +19,12 @@ body {
     background-color: #f2f2f2;
 }
 
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-size: 3em;
 }
@@ -100,45 +106,6 @@ input[type="submit"] {
     margin-top: 7rem;
 }
 
-
-#sidebar{
-    height: 100vh;
-    width: 30vw;
-    background-color: black;
-    margin-top: 0;
-}
-
-.sidebar-wrapper{
-    position: absolute;
-}
-
-
-.site_body{
-    display: flex;
-
-}
-
-.sidebar_sticky{
-    position: fixed;
-    top: 0;
-}
-
-.sidebar-links{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 5em;
-}
-
-.sidebar-links li{
-    display: flex;
-    justify-content: center;
-}
-
-.hidden{
-    visibility: hidden;
-}
 
 .slide-in-element{
     transition: margin-left 1s ease;
