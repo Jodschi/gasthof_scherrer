@@ -21,7 +21,7 @@ window.addEventListener('load', (e) =>{
 
     // wenn man mit der Maus über den Hamburger button hovert, wird mithilfe einer for-Schleife
     // allen "stripes" die Klasse "stripe_onhover" zugefügt
-    hamburger_icon.addEventListener('mouseenter', (e) => {
+    hamburger_icon.addEventListener('mouseenter', () => {
         for (let i = 0; i < stripes.length; i++){
             stripes[i].classList.add("stripe_onhover");
         }
@@ -29,10 +29,14 @@ window.addEventListener('load', (e) =>{
 
     // wenn man mit der Maus aus dem Hamburger button herausfährt, wird mithilfe derselben 
     // for-Schleife bei allen "stripes" die Klasse "stripe_onhover" entfernt
-    hamburger_icon.addEventListener('mouseleave', (e) => {
+    hamburger_icon.addEventListener('mouseleave', () => {
         for (let i = 0; i < stripes.length; i++){
             stripes[i].classList.remove("stripe_onhover");
         }
+    });
+
+    hamburger_icon.addEventListener('click', () => {
+            hamburger_icon.classList.toggle("hamburger_button_onclick");
     });
 });
 

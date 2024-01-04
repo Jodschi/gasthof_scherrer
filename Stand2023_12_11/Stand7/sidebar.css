@@ -9,6 +9,8 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+
+        transition: transform 0.2s ease;
     }
 
     /* einzelne Striche im Hamburger Button */
@@ -18,18 +20,24 @@
         border-radius: 2%;
 
         background:
-        linear-gradient(to right, rgba(255,255,255), rgba(255,255,255)),
-        linear-gradient(to right, rgb(189, 250, 255), rgb(154, 225, 255) );
+        linear-gradient(to right, rgba(239,243,255), rgba(206,240,255)),
+        linear-gradient(to right, rgba(255,255,255), rgba(255,255,255));
         background-size: 100% 100%, 0 100%;
-        background-position: 100% 100%, 0 100%;
+        background-position: 00% 100%, 100% 100%;
         background-repeat: no-repeat;
-        transition: background-size 200ms ease-in-out;
+        transition: background-size 100ms ease-out;
 
     }
 
     .stripe_onhover{
         background-size: 0% 100%, 100% 100%;
+        box-shadow: 0px 0px 2px 1px rgb(192, 192, 192);
     }
+
+    .hamburger_button_onclick{
+        transform: rotate(90deg);
+    }
+
 
     #navbar-links{
         visibility: hidden;
