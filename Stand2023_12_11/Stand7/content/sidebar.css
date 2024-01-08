@@ -103,7 +103,7 @@
 @keyframes from_left {
     from{ scale: 0 1; }
     
-    to{ scale: 0.5 1; }
+    to{ scale: 1 1; }
 }
 
 
