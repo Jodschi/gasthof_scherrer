@@ -1,10 +1,8 @@
 /* fonts */
 @font-face {
     font-family: 'NotoSans';
-    src: url('NotoSans/NotoSans-Medium.ttf');
+    src: url('../NotoSans/NotoSans-Medium.ttf');
 }
-
-
 
 /* Globale Stile */
 html{

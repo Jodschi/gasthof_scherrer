@@ -17,6 +17,10 @@ function stickyHeader() {
         // also wird der "top" style tag so ausgerechnet, dass er 
         // immer die Höhe des Headers und der Navbar miteinbezieht
         added_height = header_height + navbar_height;
+
+        console.log(header_height);
+        console.log(navbar_height);
+        console.log(added_height);
     }
 
     const scrollPosition = () => {
@@ -39,13 +43,12 @@ function stickyHeader() {
 
     // jedesmal wenn die Größe des Fensters geändert wird, 
     // werden die Höhen erneut ausgerechnet
-    
     window.addEventListener('resize', () => {
         calculateHeights();
         scrollPosition();
         console.log("The windows has been resized");        
     });
-        
+    
     window.addEventListener('scroll', scrollPosition);
 }
 

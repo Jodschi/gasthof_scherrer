@@ -5,9 +5,9 @@
 }
 
 header {
-    height: 55svh;
+    height: 30svh;
     margin-bottom: 0%;
-    background-image: url("img/Pfarrkirchen_Panoramablick_blurred2.jpg");
+    background-image: url("../img/Pfarrkirchen_Panoramablick_blurred2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ihr Name">
-    <title>Datenschutz</title>
+    <meta name="author" content="Ratzesberger, Reiter">
+    <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="sidebar.css">
-
+    
 </head>
 <body>
     <div class="header-wrapper">
@@ -31,7 +31,7 @@
             
             <div id="navbar-links">
                 <ul>
-                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="../index.html">Startseite</a></li>
                     <li><a href="speisekarte.html">Speisekarte</a></li>
                     <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
                     <li><a href="tischreservierung.html">Tischreservierung</a></li>
@@ -59,31 +59,38 @@
             
         </div>
 
+
         <div class="content">
 
-            <section id="sect1" class=" slide-in-element far_right">
-                <h2>Erhebung und Verarbeitung von Daten:</h2>
-                <p>Wir erheben und verarbeiten personenbezogene Daten nur, soweit dies für die Abwicklung von Anfragen und Aufträgen sowie für die Erbringung unserer Dienstleistungen erforderlich ist.</p>
+            <section id="sect1" class="slide-in-element far_right">
+                <h2>Kontaktinformationen:</h2>
+                <p>Firma: Gasthof Scherrer</p>
+                <p>Adresse: Pfarrkirchen i.Mkr. 16, 4141 Pfarrkirchen</p>
+                <p>Telefon: 07285 409</p>
+                <p>E-Mail: gasthof.scherrer@aon.at</p>
             </section>
-            
-            <section id="sect2" class=" slide-in-element far_right">
-                <h2>Weitergabe von Daten:</h2>
-                <p>Wir geben personenbezogene Daten nur an Dritte weiter, wenn dies zur Erfüllung unserer vertraglichen Pflichten oder gesetzlicher Verpflichtungen erforderlich ist.</p>
+
+            <section id="sect2" class="slide-in-element far_right">
+                <h2>Kontaktformular:</h2>
+                <form action="kontaktformular.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="nachricht">Ihre Nachricht:</label>
+                    <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
+                    
+                    <input type="submit" value="Nachricht abschicken">
+                </form>
+
             </section>
-            
-            <section id="sect3" class=" slide-in-element far_right">
-                <h2>Cookies:</h2>
-                <p>Unsere Website verwendet Cookies, um die Nutzung unserer Website zu erleichtern und zu verbessern. Nähere Informationen finden Sie in unserer <a href="cookies.php">Cookie-Richtlinie</a>.</p>
-            </section>
-            
-            <section id="sect4" class=" slide-in-element far_right">
-                <h2>Ihre Rechte:</h2>
-                <p>Sie haben das Recht, Auskunft über die von uns über Sie gespeicherten Daten zu erhalten, sowie das Recht auf Berichtigung, Löschung und Einschränkung der Verarbeitung dieser Daten. Nähere Informationen finden Sie in unserer <a href="datenschutzrechte.php">Datenschutzrechte-Richtlinie</a>.</p>
-            </section>
-            
+
         </div>
-            
+
     </div>
+
 
     <footer>
         <div class="copyright"> &copy; Gasthof Scherrer </div>

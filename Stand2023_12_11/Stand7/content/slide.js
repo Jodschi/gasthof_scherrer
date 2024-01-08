@@ -10,10 +10,10 @@ const sect5 = document.querySelector('#sect5');
 // mit der vordefinierten Funktion getBoundingClientRect() 
 // kann man auf die Position von HTML Elementen zugreifen
 let sect1_position = (sect1 !== null) ? sect1.getBoundingClientRect() : 0;
-let sect2_position = (sect2 !== null) ? sect1.getBoundingClientRect() : 0;
-let sect3_position = (sect3 !== null) ? sect1.getBoundingClientRect() : 0;
-let sect4_position = (sect4 !== null) ? sect1.getBoundingClientRect() : 0;
-let sect5_position = (sect5 !== null) ? sect1.getBoundingClientRect() : 0;
+let sect2_position = (sect2 !== null) ? sect2.getBoundingClientRect() : 0;
+let sect3_position = (sect3 !== null) ? sect3.getBoundingClientRect() : 0;
+let sect4_position = (sect4 !== null) ? sect4.getBoundingClientRect() : 0;
+let sect5_position = (sect5 !== null) ? sect5.getBoundingClientRect() : 0;
 
 // hier wird nur die Position zu Testzwecken in der Konsole ausgegeben
 
@@ -25,7 +25,7 @@ let sect5_position = (sect5 !== null) ? sect1.getBoundingClientRect() : 0;
 
 // console.log(sect4_position.top - 460)
 
-//console.log(sect5_position.top - 460);
+// console.log(sect5_position.top - 460);
 
 
 // Wenn eine gewisse "Strecke" gescrollt wurde, soll die entsprechende HTML Section
