@@ -1,6 +1,6 @@
 /* Hamburger Button */
 /* wird nur für Handy-displays angezeigt */
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1000px){
     .hamburger_button{
         width: 2.5em;
         height: 2.5em;
@@ -20,12 +20,13 @@
         border-radius: 2%;
 
         background:
-        linear-gradient(to right, rgba(239,243,255), rgba(206,240,255)),
+        linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)),
         linear-gradient(to right, rgba(255,255,255), rgba(255,255,255));
         background-size: 100% 100%, 0 100%;
         background-position: 00% 100%, 100% 100%;
         background-repeat: no-repeat;
         transition: background-size 100ms ease-out;
+        transition: box-shadow 200ms ease-out;
 
     }
 
@@ -35,6 +36,7 @@
     }
 
     .hamburger_button_onclick{
+        /* transform: scale(1, 0.7); */
         transform: rotate(90deg);
     }
 
@@ -43,6 +45,7 @@
         visibility: hidden;
     }
 }
+
 
 .blur{
     backdrop-filter: blur(5px); /* Hintergrund Blur Effekt */
@@ -53,42 +56,56 @@
 .sidebar-wrapper{
     position: absolute;
     height: 100%;
-    width: 50vw;
-    min-width: 420px; /* Mindestgröße von 275px, damit die links platz haben */
+    width: 100vw;
+    min-width: 420px; /* Mindestgröße von 420px, damit die links platz haben */
     transition: backdrop-filter 0.2s linear 0s;
+    z-index: 1100;
+
+    background: 
+      /* linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0)), */
+      linear-gradient(to right, var(--sidebar-color), var(--sidebar-color));
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 
-/* Rechteck, das beim Klick auf den Hamburger button erscheint */
+/* Wird nicht mehr benötigt, war überflüssig */
 #sidebar{
     height: 100%;
-    width: 50vw;
-    min-width: 100%; /* Mindestgröße von 275px, damit die links platz haben */ 
+    width: 100%;
+    min-width: 100%; /* Mindestgröße von 420px, damit die links platz haben */ 
     opacity: 70%;
     margin-top: 0;
+    display: flex;
+    align-items: start;
     
-    transition: background-size 400ms ease-out;
 }
 
 /* nur die transparente Schicht ist sichtbar */
 .sidebar-hidden{
-    background: 
-      linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0)),
-      linear-gradient(to right, var(--sticky-header-color), var(--sticky-header-color));
-    background-size: 100% 100%, 0% 100%;
-    background-position: 100% 100%, 0% 100%;
-    background-repeat: no-repeat;
+    scale: 0 1;
+    animation: from_right 0.2s ease 0s backwards;
+    transform-origin: left;
 }
 
-/* die sichtbare Schicht bekommt 100% width */
 .sidebar-visible{
-    background: 
-      linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0)),
-      linear-gradient(to right, var(--sticky-header-color), var(--sticky-header-color));
-    background-size: 0% 100%, 100% 100%;
-    background-position: 100% 100%, 0% 100%;
-    background-repeat: no-repeat;
+    animation: from_left 0.2s ease 0s forwards;
+    transform-origin: left;
 }
+
+@keyframes from_right {
+    from{ scale: 1 1; }
+
+    to{ scale: 0 1; }
+}
+
+@keyframes from_left {
+    from{ scale: 0 1; }
+    
+    to{ scale: 1 1; }
+}
+
 
 .site_body{
     display: flex;
@@ -104,8 +121,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 5em;
-
 }
 
 /* li-Element als Container für die Links */

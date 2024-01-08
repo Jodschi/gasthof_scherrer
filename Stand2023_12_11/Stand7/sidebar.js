@@ -15,8 +15,10 @@ window.addEventListener('load', (e) =>{
     hamburger_icon.addEventListener('click', () => {
         sidebar_links.classList.toggle("hidden");
         sidebar_wrapper.classList.toggle("blur");
-        sidebar.classList.toggle("sidebar-hidden");
-        sidebar.classList.toggle("sidebar-visible");
+        sidebar_wrapper.classList.toggle("sidebar-hidden");
+        sidebar_wrapper.classList.toggle("sidebar-visible");
+        hamburger_icon.classList.toggle("hamburger_button_onclick");
+        
     });
 
     // wenn man mit der Maus über den Hamburger button hovert, wird mithilfe einer for-Schleife
@@ -35,8 +37,7 @@ window.addEventListener('load', (e) =>{
         }
     });
 
-    hamburger_icon.addEventListener('click', () => {
-            hamburger_icon.classList.toggle("hamburger_button_onclick");
-    });
+    
+
 });
 

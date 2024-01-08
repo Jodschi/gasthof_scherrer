@@ -112,7 +112,23 @@ input[type="submit"] {
     transition-delay: 0s;
 }
 
-.far_left{
+.far_right{
     margin-left: 100vw;
 }
 
+
+@media (pointer: coarse) {
+    section {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        padding: 3em;
+        min-height: 10em;
+        height: fit-content;
+        width: 80vw;
+        background-color: #ff0000;
+        border-radius: 1em;
+        box-shadow: 0em 1em 0em rgb(213, 213, 213);
+    }
+}

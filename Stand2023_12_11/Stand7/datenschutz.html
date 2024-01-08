@@ -11,44 +11,104 @@
 
 </head>
 <body>
-    <header id="sticky_header">
-        <h1>Datenschutz</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="speisekarte.html">Speisekarte</a></li>
-            <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
-            <li><a href="tischreservierung.html">Tischreservierung</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="datenschutz.html">Datenschutz</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Erhebung und Verarbeitung von Daten:</h2>
-        <p>Wir erheben und verarbeiten personenbezogene Daten nur, soweit dies für die Abwicklung von Anfragen und Aufträgen sowie für die Erbringung unserer Dienstleistungen erforderlich ist.</p>
-    </section>
+    <div class="header-wrapper">
+        <header>
+            <h1>Willkommen im Gasthof Scherrer !</h1>
+        </header>
+    </div> 
 
-    <section>
-        <h2>Weitergabe von Daten:</h2>
-        <p>Wir geben personenbezogene Daten nur an Dritte weiter, wenn dies zur Erfüllung unserer vertraglichen Pflichten oder gesetzlicher Verpflichtungen erforderlich ist.</p>
-    </section>
 
-    <section>
-        <h2>Cookies:</h2>
-        <p>Unsere Website verwendet Cookies, um die Nutzung unserer Website zu erleichtern und zu verbessern. Nähere Informationen finden Sie in unserer <a href="cookies.php">Cookie-Richtlinie</a>.</p>
-    </section>
+    <div class="navbar-wrapper">
+        
 
-    <section>
-        <h2>Ihre Rechte:</h2>
-        <p>Sie haben das Recht, Auskunft über die von uns über Sie gespeicherten Daten zu erhalten, sowie das Recht auf Berichtigung, Löschung und Einschränkung der Verarbeitung dieser Daten. Nähere Informationen finden Sie in unserer <a href="datenschutzrechte.php">Datenschutzrechte-Richtlinie</a>.</p>
-    </section>
+        <nav id="sticky-header" class="sticky-header">
+        
+            <div class="hamburger_button">
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+            </div>
+            
+            <div id="navbar-links">
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="speisekarte.html">Speisekarte</a></li>
+                    <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
+                    <li><a href="tischreservierung.html">Tischreservierung</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+    
+    
+
+    <div class="site_body">
+        
+        <div class="sidebar-wrapper sidebar-hidden">
+            
+                <div class="sidebar-links hidden">
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="speisekarte.html">Speisekarte</a></li>
+                        <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
+                        <li><a href="tischreservierung.html">Tischreservierung</a></li>
+                    </ul>
+                </div>
+            
+        </div>
+
+        <div class="content">
+
+            <section id="sect1" class=" slide-in-element far_right">
+                <h2>Erhebung und Verarbeitung von Daten:</h2>
+                <p>Wir erheben und verarbeiten personenbezogene Daten nur, soweit dies für die Abwicklung von Anfragen und Aufträgen sowie für die Erbringung unserer Dienstleistungen erforderlich ist.</p>
+            </section>
+            
+            <section id="sect2" class=" slide-in-element far_right">
+                <h2>Weitergabe von Daten:</h2>
+                <p>Wir geben personenbezogene Daten nur an Dritte weiter, wenn dies zur Erfüllung unserer vertraglichen Pflichten oder gesetzlicher Verpflichtungen erforderlich ist.</p>
+            </section>
+            
+            <section id="sect3" class=" slide-in-element far_right">
+                <h2>Cookies:</h2>
+                <p>Unsere Website verwendet Cookies, um die Nutzung unserer Website zu erleichtern und zu verbessern. Nähere Informationen finden Sie in unserer <a href="cookies.php">Cookie-Richtlinie</a>.</p>
+            </section>
+            
+            <section id="sect4" class=" slide-in-element far_right">
+                <h2>Ihre Rechte:</h2>
+                <p>Sie haben das Recht, Auskunft über die von uns über Sie gespeicherten Daten zu erhalten, sowie das Recht auf Berichtigung, Löschung und Einschränkung der Verarbeitung dieser Daten. Nähere Informationen finden Sie in unserer <a href="datenschutzrechte.php">Datenschutzrechte-Richtlinie</a>.</p>
+            </section>
+            
+        </div>
+            
+    </div>
 
     <footer>
-        &copy; Gasthof Scherrer
+        <div class="copyright"> &copy; Gasthof Scherrer </div>
+        
+        <div class="vertical_stripe"></div>
+
+        <div class="footer-links-wrapper">
+
+            <div class="footer-link">
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+
+            <div class="footer-link">
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+
+            <div class="footer-link_last">
+                <a href="impressum.html">Impressum</a>
+            </div>
+
+        </div>
     </footer>
 
     <script src="header.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="slide.js"></script>
 </body>
 </html>

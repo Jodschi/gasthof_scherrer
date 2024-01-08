@@ -11,56 +11,118 @@
     
 </head>
 <body>
-    <header id="sticky_header">
-        <h1>Impressum</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="speisekarte.html">Speisekarte</a></li>
-            <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
-            <li><a href="tischreservierung.html">Tischreservierung</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="datenschutz.html">Datenschutz</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Angaben gemäß § 5 TMG:</h2>
-        <p>Gasthof Scherrer</p>
-        <p>Pfarrkirchen i.Mkr. 16</p>
-        <p>4141 Pfarrkirchen</p>
-        <p>Telefon: 07285 409</p>
-        <p>E-Mail: gasthof.scherrer@aon.at</p>
-        <p>Vertreten durch: Karl Scherrer</p>
-    </section>
 
-    <section>
-        <h2>Registergericht:</h2>
-        <p>Amtsgericht Rohrbach</p>
-    </section>
+    <div class="header-wrapper">
+        <header>
+            <h1>Willkommen im Gasthof Scherrer !</h1>
+        </header>
+    </div> 
 
-    <section>
-        <h2>Registernummer:</h2>
-        <p>HRB 12345</p>
-    </section>
 
-    <section>
-        <h2>Umsatzsteuer-Identifikationsnummer gemäß §27 a UStG:</h2>
-        <p>AT 123456789</p>
-    </section>
+    <div class="navbar-wrapper">
+        
 
-    <section>
-        <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
-        <p>Karl Scherrer</p>
-        <p>Pfarrkirchen 16</p>
-        <p>4141 Pfarrkirchen</p>
-    </section>
+        <nav id="sticky-header" class="sticky-header">
+        
+            <div class="hamburger_button">
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+            </div>
+            
+            <div id="navbar-links">
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="speisekarte.html">Speisekarte</a></li>
+                    <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
+                    <li><a href="tischreservierung.html">Tischreservierung</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div class="site_body">
+        
+        <div class="sidebar-wrapper sidebar-hidden">
+            
+                <div class="sidebar-links hidden">
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="speisekarte.html">Speisekarte</a></li>
+                        <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
+                        <li><a href="tischreservierung.html">Tischreservierung</a></li>
+                    </ul>
+                </div>
+            
+        </div>
+
+
+        <div class="content">
+
+            <section id="sect1" class="slide-in-element far_right">
+                <h2>Angaben gemäß § 5 TMG:</h2>
+                <p>Gasthof Scherrer</p>
+                <p>Pfarrkirchen i.Mkr. 16</p>
+                <p>4141 Pfarrkirchen</p>
+                <p>Telefon: 07285 409</p>
+                <p>E-Mail: gasthof.scherrer@aon.at</p>
+                <p>Vertreten durch: Karl Scherrer</p>
+            </section>
+
+            <section id="sect2" class="slide-in-element far_right">
+                <h2>Registergericht:</h2>
+                <p>Amtsgericht Rohrbach</p>
+            </section>
+
+            <section id="sect3" class="slide-in-element far_right">
+                <h2>Registernummer:</h2>
+                <p>HRB 12345</p>
+            </section>
+
+            <section id="sect4" class="slide-in-element far_right">
+                <h2>Umsatzsteuer-Identifikationsnummer gemäß §27 a UStG:</h2>
+                <p>AT 123456789</p>
+            </section>
+
+            <section id="sect5" class="slide-in-element far_right">
+                <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
+                <p>Karl Scherrer</p>
+                <p>Pfarrkirchen 16</p>
+                <p>4141 Pfarrkirchen</p>
+            </section>
+
+        </div>
+
+    </div>
+
+    
 
     <footer>
-        &copy; Gasthof Scherrer
+        <div class="copyright"> &copy; Gasthof Scherrer </div>
+        
+        <div class="vertical_stripe"></div>
+
+        <div class="footer-links-wrapper">
+
+            <div class="footer-link">
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+
+            <div class="footer-link">
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+
+            <div class="footer-link_last">
+                <a href="impressum.html">Impressum</a>
+            </div>
+
+        </div>
     </footer>
 
     <script src="header.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="slide.js"></script>
 </body>
 </html>
