@@ -2,6 +2,7 @@ const sidebar = document.querySelector('#sidebar');
 const sidebar_wrapper = document.querySelector('.sidebar-wrapper');
 const sidebar_links = document.querySelector('.sidebar-links');
 const hamburger_icon = document.querySelector('.hamburger_button');
+const body = document.querySelector('body');
 
 // stripes sind die einzelnen Striche im Hamburger icon, also seine "Kinder (children)"
 const stripes = hamburger_icon.children;
@@ -38,6 +39,4 @@ window.addEventListener('load', (e) =>{
     });
 
     
-
 });
-

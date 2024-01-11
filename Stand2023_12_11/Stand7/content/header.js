@@ -18,9 +18,7 @@ function stickyHeader() {
         // immer die Höhe des Headers und der Navbar miteinbezieht
         added_height = header_height + navbar_height;
 
-        console.log(header_height);
-        console.log(navbar_height);
-        console.log(added_height);
+        
     }
 
     const scrollPosition = () => {
@@ -40,13 +38,13 @@ function stickyHeader() {
 
     // die Höhen werden am Anfang einmal ausgerechnet
     calculateHeights();
+    scrollPosition();
 
     // jedesmal wenn die Größe des Fensters geändert wird, 
     // werden die Höhen erneut ausgerechnet
     window.addEventListener('resize', () => {
         calculateHeights();
-        scrollPosition();
-        console.log("The windows has been resized");        
+        scrollPosition();        
     });
     
     window.addEventListener('scroll', scrollPosition);

@@ -84,32 +84,30 @@
 
 /* nur die transparente Schicht ist sichtbar */
 .sidebar-hidden{
-    scale: 0 1;
-    animation: from_right 0.2s ease 0s backwards;
+    transform: scaleX(0);
+    animation: from_right 0.2s ease 0s forwards;
     transform-origin: left;
+    
 }
 
 .sidebar-visible{
     animation: from_left 0.2s ease 0s forwards;
     transform-origin: left;
+
 }
 
 @keyframes from_right {
-    from{ scale: 1 1; }
+    from{ transform: scaleX(1); }
 
-    to{ scale: 0 1; }
+    to{ transform: scaleX(0); }
 }
 
 @keyframes from_left {
-    from{ scale: 0 1; }
+    from{ transform: scaleX(0); }
     
-    to{ scale: 1 1; }
+    to{ transform: scaleX(1); }
 }
 
-
-.site_body{
-    display: flex;
-}
 
 .sidebar_sticky{
     position: fixed;

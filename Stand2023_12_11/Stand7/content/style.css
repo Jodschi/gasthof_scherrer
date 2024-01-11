@@ -17,6 +17,14 @@ body {
     background-color: #f2f2f2;
 }
 
+/* verhindert, dass alle Animationen ausgeführt werden */
+/* wird nach einer gewissen Zeitspanne aufgehoben */
+body.preload {
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+    transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
+
 html, body{
     height: 100%;
     margin: 0;
@@ -32,10 +40,10 @@ section {
     margin-right: 5vw;
     margin-top: 3em;
     margin-bottom: 3em;
-    padding: 3em;
+    padding: 5vw;
+    width: 80vw;
     min-height: 10em;
     height: fit-content;
-    width: 80vw;
     background-color: #fff;
     border-radius: 1em;
     box-shadow: 0em 1em 0em rgb(213, 213, 213);
@@ -99,34 +107,23 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+.site_body{
+    display: flex;
+    align-content: center;
+}
 
 .content{
     margin-top: 7rem;
+    min-height: 60vh;
 }
 
+@media (pointer: fine) {
+    .slide-in-element{
+        transition: margin-left 1s ease;
+        transition-delay: 0s;
+    }
 
-.slide-in-element{
-    transition: margin-left 1s ease;
-    transition-delay: 0s;
-}
-
-.far_right{
-    margin-left: 100vw;
-}
-
-
-@media (pointer: coarse) {
-    section {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 3em;
-        margin-bottom: 3em;
-        padding: 3em;
-        min-height: 10em;
-        height: fit-content;
-        width: 80vw;
-        background-color: #ff0000;
-        border-radius: 1em;
-        box-shadow: 0em 1em 0em rgb(213, 213, 213);
+    .far_right{
+        margin-left: 100vw;
     }
 }

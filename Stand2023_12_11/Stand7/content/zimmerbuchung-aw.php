@@ -33,7 +33,7 @@
 
             <div id="navbar-links">
                 <ul>
-                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="../index.html">Startseite</a></li>
                     <li><a href="speisekarte.html">Speisekarte</a></li>
                     <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
                     <li><a href="tischreservierung.html">Tischreservierung</a></li>
@@ -52,7 +52,7 @@
 
             <div class="sidebar-links hidden">
                 <ul>
-                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="../index.html">Startseite</a></li>
                     <li><a href="speisekarte.html">Speisekarte</a></li>
                     <li><a href="zimmerbuchung.html">Zimmerbuchung</a></li>
                     <li><a href="tischreservierung.html">Tischreservierung</a></li>

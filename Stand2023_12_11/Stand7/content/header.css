@@ -7,7 +7,7 @@
 header {
     height: 30svh;
     margin-bottom: 0%;
-    background-image: url("../img/Pfarrkirchen_Panoramablick_blurred2.jpg");
+    background-image: url("../img/Pfarrkirchen_Panoramablick_blurred2_small.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -27,7 +27,6 @@ footer {
     text-align: center;
     height: 10vh;
     min-height: 5rem;
-    display: flex;
     align-items: center;
 }
 
@@ -47,6 +46,13 @@ nav {
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+@media (pointer: corse){
+    .navbar-wrapper {
+        position: sticky;
+        top: 0;
+    }
 }
 
 nav ul {
@@ -94,18 +100,21 @@ nav ul li a:focus {
     justify-content: center;
 }
 
-/* Sticky Header */
-.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 100%;
-    z-index: 100;
-    width: 100%;
-    /* background-color: #8791a2; */
-    opacity: 100%;
-    transition: 6s ease-in ;
+@media (pointer: fine){
+    /* Sticky Header */
+    .sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 100%;
+        z-index: 100;
+        width: 100%;
+        /* background-color: #8791a2; */
+        opacity: 100%;
+        transition: 6s ease-in ;
+    }
 }
+
 
 .navbar-wrapper{
     position: absolute;
@@ -135,10 +144,6 @@ nav ul li a:focus {
     background-size: 0 3px, 100% 3px, 0 100%, 100% 100%;
 }
 
-
-@keyframes scroll-watcher {
-    to {scale: 1 1; }
-}
 
 /* Die Links im Footer sollen nicht wie Standard-Links aussehen */
 .footer-link a, .footer-link_last a{
