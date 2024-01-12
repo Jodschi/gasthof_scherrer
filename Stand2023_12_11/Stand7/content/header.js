@@ -18,7 +18,6 @@ function stickyHeader() {
         // immer die Höhe des Headers und der Navbar miteinbezieht
         added_height = header_height + navbar_height;
 
-        
     }
 
     const scrollPosition = () => {
@@ -34,6 +33,8 @@ function stickyHeader() {
             
             sidebar_wrapper.style.top = added_height + "px";
         }
+
+        
     }
 
     // die Höhen werden am Anfang einmal ausgerechnet
@@ -47,7 +48,14 @@ function stickyHeader() {
         scrollPosition();        
     });
     
-    window.addEventListener('scroll', scrollPosition);
+    window.addEventListener('scroll', () => {
+        scrollPosition();
+        
+    });
+
+    window.addEventListener('touchmove', () => {
+        scrollPosition();
+    });
 }
 
 

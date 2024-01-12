@@ -2,7 +2,6 @@ const sidebar = document.querySelector('#sidebar');
 const sidebar_wrapper = document.querySelector('.sidebar-wrapper');
 const sidebar_links = document.querySelector('.sidebar-links');
 const hamburger_icon = document.querySelector('.hamburger_button');
-const body = document.querySelector('body');
 
 // stripes sind die einzelnen Striche im Hamburger icon, also seine "Kinder (children)"
 const stripes = hamburger_icon.children;
@@ -11,8 +10,14 @@ const stripes = hamburger_icon.children;
 // (margin Top des sidebar_wrappers wird automatisch angepasst, damit keine Zwischenräume entstehen)
 // *wurde weggelassen, da nicht benötigt*
 
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => document.body.classList.remove('preload'), 400);
+});
+
 // onclick Eventhandler für den Hamburger Button
 window.addEventListener('load', (e) =>{
+    
+    
     hamburger_icon.addEventListener('click', () => {
         sidebar_links.classList.toggle("hidden");
         sidebar_wrapper.classList.toggle("blur");
@@ -22,6 +27,7 @@ window.addEventListener('load', (e) =>{
         
     });
 
+
     // wenn man mit der Maus über den Hamburger button hovert, wird mithilfe einer for-Schleife
     // allen "stripes" die Klasse "stripe_onhover" zugefügt
     hamburger_icon.addEventListener('mouseenter', () => {
@@ -29,6 +35,7 @@ window.addEventListener('load', (e) =>{
             stripes[i].classList.add("stripe_onhover");
         }
     });
+
 
     // wenn man mit der Maus aus dem Hamburger button herausfährt, wird mithilfe derselben 
     // for-Schleife bei allen "stripes" die Klasse "stripe_onhover" entfernt
@@ -38,5 +45,5 @@ window.addEventListener('load', (e) =>{
         }
     });
 
-    
+
 });

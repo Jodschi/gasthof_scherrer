@@ -19,10 +19,13 @@ body {
 
 /* verhindert, dass alle Animationen ausgeführt werden */
 /* wird nach einer gewissen Zeitspanne aufgehoben */
-body.preload {
-    animation-duration: 0s !important;
-    -webkit-animation-duration: 0s !important;
-    transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+body.preload .slide-in-element {
+    animation: none !important;
+}
+
+body.preload .sidebar-hidden {
+    visibility: hidden;
+    
 }
 
 html, body{
