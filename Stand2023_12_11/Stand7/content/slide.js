@@ -31,3 +31,4 @@ const checkScroll = () => {
 // scroll Eventlistener hinzufügen, der die checkScroll Funktion ausführt
 window.addEventListener('scroll', checkScroll);
 window.addEventListener('load', checkScroll);
+
