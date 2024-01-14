@@ -57,11 +57,3 @@ function stickyHeader() {
         scrollPosition();
     });
 }
-
-
-
-
-
-   
-
-

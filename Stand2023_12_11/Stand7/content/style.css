@@ -24,7 +24,7 @@ body.preload .slide-in-element {
 }
 
 body.preload .sidebar-hidden {
-    visibility: hidden;
+    visibility: hidden !important;
     
 }
 

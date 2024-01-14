@@ -6,10 +6,8 @@ const hamburger_icon = document.querySelector('.hamburger_button');
 // stripes sind die einzelnen Striche im Hamburger icon, also seine "Kinder (children)"
 const stripes = hamburger_icon.children;
 
-
-// (margin Top des sidebar_wrappers wird automatisch angepasst, damit keine Zwischenräume entstehen)
-// *wurde weggelassen, da nicht benötigt*
-
+// nach einer gewissen Zeit nachdem die Seite geladen ist,
+// wird die Animation sichtbar
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => document.body.classList.remove('preload'), 400);
 });

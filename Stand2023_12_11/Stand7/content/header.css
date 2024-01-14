@@ -2,24 +2,42 @@
     --header-underline-color: rgb(27, 27, 97);
     --sticky-header-color: rgb(57, 57, 57);
     --sidebar-color: rgba(57, 57, 57, 0.7);
+    --header-height: 20rem;
+    --min_header-height: 14rem;
+    --navbar-height: 3.5rem;
 }
 
 header {
-    height: 30svh;
+    height: var(--header-height);
+    min-height: var(--min_header-height);
     margin-bottom: 0%;
     background-image: url("../img/Pfarrkirchen_Panoramablick_blurred2_small.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
     align-items: start;
-    justify-items: center;
 }
 
 header h1{
-    color: black;
+    color: rgba(255, 255, 255);
+    text-align: center;
+    align-self: inherit;
+    height: 100%;
+    margin: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(var(--header-height) * 0.2);
+    
+
+    text-shadow: 2px 2px 0 rgb(137, 189, 112),
+                 3px 3px 0 rgb(0, 0, 0);
+
 }
+
 
 /* Footer-Stil */
 footer {
@@ -41,7 +59,7 @@ header, footer {
 
 nav {
     background-color: var(--sticky-header-color);
-    height: 3.5em;
+    height: var(--navbar-height);
     width: 100%;
     display: flex;
     justify-content: left;
@@ -113,7 +131,6 @@ nav ul li a:focus {
     opacity: 100%;
     transition: 6s ease-in ;
 }
-
 
 
 .navbar-wrapper{
